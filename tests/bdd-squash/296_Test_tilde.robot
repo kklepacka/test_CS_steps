@@ -12,7 +12,7 @@ Test Teardown    Test Teardown
 Test tilde
     [Documentation]    Test tilde
 
-    Given testing $test
+    Given testing ~
 
 
 *** Keywords ***

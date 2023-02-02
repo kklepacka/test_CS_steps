@@ -12,7 +12,7 @@ Test Teardown    Test Teardown
 Test c_cedille
     [Documentation]    Test c_cedille
 
-    Given testing $test
+    Given testing ç
 
 
 *** Keywords ***

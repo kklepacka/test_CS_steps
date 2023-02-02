@@ -12,7 +12,7 @@ Test Teardown    Test Teardown
 Test at
     [Documentation]    Test at
 
-    Given testing $test
+    Given testing @
 
 
 *** Keywords ***
