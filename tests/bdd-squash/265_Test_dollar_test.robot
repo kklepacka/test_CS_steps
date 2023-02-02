@@ -24,9 +24,12 @@ Test Setup
 
     ${TEST_SETUP_VALUE} =        Get Variable Value    ${TEST_SETUP}
     ${TEST_265_SETUP_VALUE} =    Get Variable Value    ${TEST_265_SETUP}
-    IF    $TEST_SETUP_VALUE is not None        Run Keyword    ${TEST_SETUP}
-    IF    $TEST_265_SETUP_VALUE is not None    Run Keyword    ${TEST_265_SETUP}
-
+    IF    $TEST_SETUP_VALUE is not None        
+        Run Keyword    ${TEST_SETUP}
+    END
+    IF    $TEST_265_SETUP_VALUE is not None    
+        Run Keyword    ${TEST_265_SETUP}
+    END
 Test Teardown
     [Documentation]    test teardown
     ...                You can define the ${TEST_TEARDOWN} variable with a keyword for tearing down all your tests.
@@ -35,5 +38,9 @@ Test Teardown
 
     ${TEST_265_TEARDOWN_VALUE} =    Get Variable Value    ${TEST_265_TEARDOWN}
     ${TEST_TEARDOWN_VALUE} =        Get Variable Value    ${TEST_TEARDOWN}
-    IF    $TEST_265_TEARDOWN_VALUE is not None    Run Keyword    ${TEST_265_TEARDOWN}
-    IF    $TEST_TEARDOWN_VALUE is not None        Run Keyword    ${TEST_TEARDOWN}
+    IF    $TEST_265_TEARDOWN_VALUE is not None    
+        Run Keyword    ${TEST_265_TEARDOWN}
+    END
+    IF    $TEST_TEARDOWN_VALUE is not None        
+        Run Keyword    ${TEST_TEARDOWN}
+    END
