@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation    Test "
+Documentation    Test dollar test
 Metadata         ID                           265
 Metadata         Automation priority          null
 Metadata         Test case importance         Low
@@ -9,10 +9,10 @@ Test Teardown    Test Teardown
 
 
 *** Test Cases ***
-Test "
-    [Documentation]    Test "
+Test dollar test
+    [Documentation]    Test dollar test
 
-    Given je saisis Test "
+    Given je saisis Test $test
 
 
 *** Keywords ***
