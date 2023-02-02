@@ -12,7 +12,7 @@ Test Teardown    Test Teardown
 Test dollar_curlies with backslash
     [Documentation]    Test dollar_curlies with backslash
 
-    Given testing ${echo test}
+    Given testing \${echo test}
 
 
 *** Keywords ***
